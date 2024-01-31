@@ -1,58 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=M+PLUS+1p&family=Noto+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=M+PLUS+1p&family=Noto+Serif&display=swap");
 
 body {
-    font-family: Libre+Baskerville, Arial, sans-serif;
-    text-align: center;
-    width: 300px;
-    padding: 5px;
-    background-color: #f7f7f7;
+  font-family: Libre + Baskerville, Arial, sans-serif;
+  text-align: center;
+  width: 300px;
+  padding: 5px;
+  background-color: #f7f7f7;
 }
-img{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 35px;
-    height: auto;
-    border-radius: 50%;
-    border: solid 1px #555;
+img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 28px;
+  height: auto;
+  border-radius: 5px;
+  border: solid 1px #555;
 }
 #copy-text {
-    padding: 5px 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #text-swapper {
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 15px;
-    margin: 0 auto 10px auto;
-    min-height: 30px;
-    width: 94%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 15px;
+  margin: 0 auto 10px auto;
+  min-height: 10px;
+  width: 94%;
 }
 
 #copy-button {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #copy-button button {
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #copy-status {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #555;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
 }

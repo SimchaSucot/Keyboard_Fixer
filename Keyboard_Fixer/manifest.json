@@ -1,14 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Hebrew-English Text Swapper",
-  "description": "A Chrome extension to swap selected text between Hebrew and English based on keyboard layout.",
+  "description": "Browser extension that corrects keyboard layout errors between Hebrew and English, swapping characters in the clipboard-copied text for easy correction.",
   "version": "1.0",
   "permissions": ["clipboardRead"],
   "action": {
     "default_popup": "html/popup.html",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
   },

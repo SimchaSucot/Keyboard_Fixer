@@ -12,7 +12,7 @@ async function readFromClipboard() {
     const changText = swapText(text);
     document.getElementById("text-swapper").textContent = changText;
     const button = document.createElement("button");
-    button.textContent = "העתק";
+    button.textContent = "העתק את הטקסט המתוקן ללוח";
     document.getElementById("copy-button").innerHTML = "";
     document.getElementById("copy-button").appendChild(button);
     document
