@@ -38,7 +38,7 @@ function swapLetterToEnglish(letter) {
   let index = hebrewKeyboard.indexOf(letter);
   if (index !== -1) {
     return englishKeyboard[index];
-  }
+  }בג
   return letter;
 }
 

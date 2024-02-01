@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hebrew-English Text Swapper",
-  "description": "Browser extension that corrects keyboard layout errors between Hebrew and English, swapping characters in the clipboard-copied text for easy correction.",
+  "description": "An extension that converts text between Hebrew and English based on keyboard layout positions.",
   "version": "1.0",
   "permissions": ["clipboardRead"],
   "action": {
