@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Text Swapper</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
   <body>
-    <img src="../icons/icon128.png">
-    <button id="copy-text">הדבק</button>
-    <div>
-      <div id="text-swapper" readonly></div>
-      <div id="copy-button">
-    </div>
+    <header>
+      <img src="../icons/icon48.png" alt="Icon">
+      <h1>תיקון מקלדת</h1>
+    </header>
+
+    <button id="copy-text">
+      <span>הדבק מהלוח ותקן</span>
+    </button>
+    
+    <div id="text-swapper"></div>
+    
+    <div id="copy-button"></div>
     <p id="copy-status"></p>
+
     <script src="../js/popup.js"></script>
   </body>
 </html>
