@@ -1,12 +1,29 @@
 {
   "manifest_version": 3,
   "name": "Hebrew-English Text Swapper",
-  "description": "An extension that converts text between Hebrew and English based on keyboard layout positions.",
-  "version": "1.0",
-  "permissions": ["clipboardRead"],
+  "version": "2.0",
+  "description": "הפוך טקסט מעברית לאנגלית ולהפך בקלות",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_popup": "html/popup.html",
     "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
   },

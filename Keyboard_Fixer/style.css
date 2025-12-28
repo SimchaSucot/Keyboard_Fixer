@@ -1,58 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=M+PLUS+1p&family=Noto+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 body {
-  font-family: Libre + Baskerville, Arial, sans-serif;
-  text-align: center;
-  width: 300px;
-  padding: 5px;
-  background-color: #f7f7f7;
+  font-family: 'Rubik', sans-serif;
+  background-color: #ffffff;
+  width: 320px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
 }
-img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 28px;
-  height: auto;
-  border-radius: 5px;
-  border: solid 1px #555;
+
+/* כותרת ולוגו */
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
 }
+
+header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* כפתורים */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
 #copy-text {
-  padding: 5px 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  background-color: #4caf50;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
 }
 
+#copy-text:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4);
+}
+
+#copy-text:active {
+  transform: translateY(0);
+}
+
+/* אזור הטקסט */
 #text-swapper {
-  border: 1px solid #ddd;
-  padding: 10px;
-  font-size: 15px;
-  margin: 0 auto 10px auto;
-  min-height: 10px;
-  width: 94%;
+  width: 100%;
+  min-height: 60px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #495057;
+  box-sizing: border-box; /* חשוב כדי שה-padding לא יגדיל את האלמנט */
+  margin-bottom: 15px;
+  word-break: break-word;
 }
 
-#copy-button {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
+/* כפתור העתקה משני */
 #copy-button button {
-  padding: 5px 10px;
-  font-size: 16px;
-  background-color: #008cba;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  background-color: #e9ecef;
+  color: #495057;
 }
 
+#copy-button button:hover {
+  background-color: #dee2e6;
+  color: #212529;
+}
+
+/* הודעת סטטוס */
 #copy-status {
-  margin-top: 10px;
-  font-size: 13px;
-  color: #555;
+  font-size: 12px;
+  color: #28a745;
+  height: 20px;
+  margin: 0;
+  font-weight: 500;
 }
